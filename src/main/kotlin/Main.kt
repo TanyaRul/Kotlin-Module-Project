@@ -1,5 +1,8 @@
 fun main() {
-    // ваш код начнется здесь
-    // вы не должны ограничиваться только классом Main и можете создавать свои классы по необходимости
-    println("Привет")
+    val archiveId = ""
+    val archiveList: MutableMap<String, MutableMap<String, String>> = mutableMapOf()
+    println("Вас приветствует приложение Заметки!")
+    val archive = ArchiveMenu(archiveId, archiveList)
+    Navigation().show(archive, archiveId, archiveList)
+
 }
